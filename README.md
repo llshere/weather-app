@@ -6,12 +6,11 @@ Home Page: [https://llshere.github.io/weather-app/](https://llshere.github.io/we
 
 ## description
 
-It is my first SPA project finished with React + Material-UI.  
+It is my first SPA project finished with React + Material-UI.
 
 ## features
 
-It displays the selected city's weather fake data of today and the next 15 days. 
+It displays the selected city's weather fake data of today and the next 15 days.
+
 - today's weather displayed in hours grid
 - future's weather displayed in line chart
-
-
