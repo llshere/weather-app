@@ -140,7 +140,7 @@ export const todayData = [
   },
 ];
 
-export const dateArray = [...Array(13).keys()].map((value) =>
+export const dateArray = [...Array(15).keys()].map((value) =>
   moment()
     .add(value + 1, "d")
     .format("MM/DD")

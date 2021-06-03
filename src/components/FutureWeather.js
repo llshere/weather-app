@@ -14,12 +14,11 @@ import { futureData, dateArray } from "../fakeData.js";
 
 const useStyles = makeStyles(() =>
   createStyles({
-    lineChart: {
-      width: "80%",
-      height: "80%",
-      marginTop: "10%",
-      marginLeft: "10%",
-      marginRight: "10%",
+    chartContainer: {
+      margin: "auto",
+      paddingTop: "5%",
+      width: "90%",
+      height: "50%",
     },
   })
 );
@@ -40,16 +39,18 @@ export default function FutureWeather(props) {
   }));
 
   return (
-    <ResponsiveContainer width="80%" height="50%" margin="auto">
-      <LineChart className={classes.lineChart} data={futureCityData}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="date" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line type="monotone" dataKey="high" stroke="#8884d8" />
-        <Line type="monotone" dataKey="low" stroke="#82ca9d" />
-      </LineChart>
-    </ResponsiveContainer>
+    <div className={classes.chartContainer}>
+      <ResponsiveContainer>
+        <LineChart data={futureCityData}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="date" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="high" stroke="#8884d8" />
+          <Line type="monotone" dataKey="low" stroke="#82ca9d" />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
   );
 }
