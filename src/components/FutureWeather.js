@@ -10,7 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { futureData, dateArray } from "./fakeData";
+import { futureData, dateArray } from "../fakeData.js";
 
 const useStyles = makeStyles(() =>
   createStyles({

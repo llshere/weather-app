@@ -2,7 +2,7 @@ import { createStyles, makeStyles } from "@material-ui/core/styles";
 import { GridList } from "@material-ui/core";
 import { GridListTile } from "@material-ui/core/";
 import { GridListTileBar } from "@material-ui/core";
-import { todayData, timezone } from "./fakeData.js";
+import { todayData, timezone } from "../fakeData.js";
 import { useEffect, useRef } from "react";
 import React from "react";
 import Moment from "react-moment";
